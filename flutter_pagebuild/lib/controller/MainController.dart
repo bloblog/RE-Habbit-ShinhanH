@@ -24,9 +24,12 @@ class resetMainModel with ChangeNotifier {
   static final MainModel mainmodel = MainModel.inst;
   User userlogin = User.getUserlogin;
   resetMainModel._internal() {
-    MainModel.inst.PieChartMap['챌린지 성공'] = MainModel.inst.sucRate;
-    MainModel.inst.PieChartMap['적금 성공'] = MainModel.inst.savinRate;
-    MainModel.inst.PieChartMap['실패'] = MainModel.inst.failRate;
+    // MainModel.inst.PieChartMap['챌린지 성공'] = MainModel.inst.sucRate;
+    // MainModel.inst.PieChartMap['적금 성공'] = MainModel.inst.savinRate;
+    // MainModel.inst.PieChartMap['실패'] = MainModel.inst.failRate;
+    MainModel.inst.PieChartMap['챌린지 성공'] = 85;
+    MainModel.inst.PieChartMap['적금 성공'] = 15;
+    MainModel.inst.PieChartMap['실패'] = 0;
   }
 
   factory resetMainModel() {

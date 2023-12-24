@@ -756,6 +756,7 @@ class _CardTableState extends State<CardTable> {
 
   late Future<List<dynamic>> _cardListFuture;
 
+  // [12.24] async 키워드 오류남
   @override
   void initState() async {
     super.initState();

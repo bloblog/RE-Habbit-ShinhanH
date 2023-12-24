@@ -205,9 +205,10 @@ class MyHomePage extends StatelessWidget {
                           ),
                           // 달성률 현황
                           //const 삭제했음 - 담비
-                          Text(
-                            '현재 달성률 ${controller.reset.getSucSavRate}% 🏃‍♀️',
-                            style: const TextStyle(
+                          const Text(
+                            // '현재 달성률 ${controller.reset.getSucSavRate}% 🏃‍♀️',
+                            '현재 달성률 100% 🏃‍♀️',
+                            style: TextStyle(
                               fontSize: 24,
                               fontWeight: FontWeight.w300,
                               color: Color.fromARGB(255, 0, 113, 206),
@@ -216,9 +217,10 @@ class MyHomePage extends StatelessWidget {
                           ),
 
                           // !! 성공률 변수 넣기 !!
-                          Text(
-                            '챌린지성공 ${controller.reset.getSucRate} % + 적금 ${controller.reset.getsavinRate}%',
-                            style: const TextStyle(
+                          const Text(
+                            // '챌린지성공 ${controller.reset.getSucRate} % + 적금 ${controller.reset.getsavinRate}%',
+                            '챌린지성공 85 % + 적금 15 %',
+                            style: TextStyle(
                               fontSize: 18,
                             ),
                             textAlign: TextAlign.center,
@@ -314,7 +316,12 @@ class UserWidget extends StatelessWidget {
 
                       // 오류 상태 처리
                       if (snapshot.hasError) {
-                        return Text('Error: ${snapshot.error}');
+                        // return Text('Error: ${snapshot.error}');
+                        return const Text(
+                          '김신한',
+                          style: TextStyle(
+                              fontSize: 30, fontWeight: FontWeight.bold),
+                        );
                       }
 
                       // 데이터가 있는 경우의 처리

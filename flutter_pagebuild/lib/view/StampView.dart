@@ -76,24 +76,24 @@ class StampView extends StatelessWidget {
             ),
 
             // 달력 위젯
-            Stack(
+            const Stack(
               children: [
-                const Calendar(),
-                const Positioned(
+                Calendar(),
+                Positioned(
                   top: 0,
                   left: 0,
                   right: 0,
                   child: Stamps(),
                 ),
-                TextButton(
-                    onPressed: () {
-                      MainModel.inst.now_date =
-                          (int.parse(MainModel.inst.lastChecked_date) + 1)
-                              .toString();
-                      MainModel.inst.now_time = "0000";
-                      resetMainModel().checkStamp();
-                    },
-                    child: const Text('테스트용 버튼'))
+                // TextButton(
+                //     onPressed: () {
+                //       MainModel.inst.now_date =
+                //           (int.parse(MainModel.inst.lastChecked_date) + 1)
+                //               .toString();
+                //       MainModel.inst.now_time = "0000";
+                //       resetMainModel().checkStamp();
+                //     },
+                //     child: const Text('테스트용 버튼'))
               ],
             ),
           ],
