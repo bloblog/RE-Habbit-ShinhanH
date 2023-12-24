@@ -1,5 +1,6 @@
 
 ### [ 적금 연계형 챌린지 Re-Habbit 서비스 개발 ]
+<img src="https://github.com/bloblog/RE-Habbit-ShinhanH/blob/main/%EC%B0%B8%EA%B3%A0%EC%9E%90%EB%A3%8C/img/%ED%95%B4%EC%BB%A4%ED%86%A4%EC%8D%B8%EB%84%A4%EC%9D%BC.png?raw=true">
 
 ## About Project
 
